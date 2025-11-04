@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { SITE_CONFIG } from "@/lib/constants"
 
 export function Footer() {
@@ -11,9 +12,13 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-block">
-              <span className="font-serif text-2xl font-semibold text-sage-700">
-                {SITE_CONFIG.name}
-              </span>
+              <Image
+                src="/images/logo-artfelt.png"
+                alt={SITE_CONFIG.name}
+                width={48}
+                height={48}
+                className="h-12 w-12"
+              />
             </Link>
             <p className="mt-2 text-sm font-medium text-charcoal">
               {SITE_CONFIG.tagline}
@@ -22,10 +27,19 @@ export function Footer() {
               {SITE_CONFIG.description}
             </p>
             <div className="mt-4 text-sm text-charcoal/60">
-              <p className="font-medium text-charcoal">About Divya</p>
-              <p className="mt-1">
-                Divya Masiwal Batra (MA Clinical Psychology) is an Art Therapist & Psychotherapist with 9+ years of experience in mental health education. She bridges business understanding, clinical expertise, and creative expression to make therapy accessible and culturally relevant for Indian clients.
-              </p>
+              <p className="font-medium text-charcoal mb-3">About Divya</p>
+              <div className="flex gap-4 items-start">
+                <Image
+                  src="/images/divya-batra.jpeg"
+                  alt="Divya Masiwal Batra"
+                  width={80}
+                  height={80}
+                  className="rounded-lg object-cover flex-shrink-0 h-20 w-20"
+                />
+                <p className="mt-0">
+                  Divya Masiwal Batra (MA Clinical Psychology) is an Art Therapist & Psychotherapist with 9+ years of experience in mental health education. She bridges business understanding, clinical expertise, and creative expression to make therapy accessible and culturally relevant for Indian clients.
+                </p>
+              </div>
             </div>
           </div>
 
