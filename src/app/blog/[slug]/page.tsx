@@ -4,6 +4,7 @@ import { getPostBySlug, getAllPosts, getRecentPosts } from "@/lib/blog-data"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -44,8 +45,35 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const relatedPosts = getRecentPosts(3).filter((p) => p.id !== post.id).slice(0, 2)
 
+  // Article structured data
+  const articleSchema = generateArticleSchema({
+    title: post.title,
+    description: post.excerpt,
+    publishedAt: post.publishedAt,
+    modifiedAt: post.updatedAt,
+    slug: post.slug,
+  })
+
+  // Breadcrumb structured data
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Blog", url: "/blog" },
+    { name: post.title, url: `/blog/${post.slug}` },
+  ])
+
   return (
     <>
+      {/* Article Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      {/* Breadcrumb Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       {/* Article Header */}
       <article className="mx-auto max-w-4xl px-6 py-12 lg:px-8">
         {/* Breadcrumb */}

@@ -3,12 +3,22 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CTASection } from "@/components/shared/CTASection"
 import { getRecentPosts } from "@/lib/blog-data"
 import Link from "next/link"
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 
-export const metadata = {
-  title: "Resources & Self-Help Tools | Artfelt Therapy",
+export const metadata = generatePageMetadata({
+  title: "Art Therapy Resources by Divya Masiwal Batra | Free & Paid Tools",
   description:
-    "Free and paid art therapy resources for mental wellness by Divya Masiwal Batra. Mandala coloring pads, trackers, planners, and educational content.",
-}
+    "Therapeutic art resources curated by Divya Masiwal Batra: mandala coloring books, creative emotion workbooks, healing journals, and free downloadable guides for mental wellness.",
+  path: "/resources",
+  keywords: [
+    "art therapy resources",
+    "mandala coloring book",
+    "creative emotion workbook",
+    "healing journal",
+    "mental wellness tools India",
+    "therapeutic art exercises",
+  ],
+})
 
 // Art Therapy products curated by Divya Masiwal Batra
 const products = [
@@ -67,8 +77,20 @@ const products = [
 export default function ResourcesPage() {
   const recentBlogPosts = getRecentPosts(3)
 
+  // Breadcrumb structured data
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Resources", url: "/resources" },
+  ])
+
   return (
     <>
+      {/* Breadcrumb Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-soft-blue/20 to-white py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">

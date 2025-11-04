@@ -2,18 +2,40 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { getAllPosts, blogCategories } from "@/lib/blog-data"
 import Link from "next/link"
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 
-export const metadata = {
-  title: "Blog - Art Therapy Insights & Mental Wellness | Artfelt Therapy",
+export const metadata = generatePageMetadata({
+  title: "Art Therapy Blog by Divya Masiwal Batra | Mental Wellness Insights",
   description:
-    "Explore articles on art therapy, mental wellness, and creative healing by Divya Masiwal Batra. Learn practical techniques for emotional wellbeing.",
-}
+    "Explore expert articles on art therapy, mental wellness, and creative healing by Divya Masiwal Batra, MA Clinical Psychology. Practical techniques for emotional wellbeing in India.",
+  path: "/blog",
+  keywords: [
+    "art therapy blog",
+    "mental wellness articles",
+    "creative healing techniques",
+    "Indian mental health",
+    "psychology insights",
+    "therapeutic art exercises",
+  ],
+})
 
 export default function BlogPage() {
   const posts = getAllPosts()
 
+  // Breadcrumb structured data
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Blog", url: "/blog" },
+  ])
+
   return (
     <>
+      {/* Breadcrumb Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-sage-50 to-white py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">

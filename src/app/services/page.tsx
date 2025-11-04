@@ -3,18 +3,65 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { CTASection } from "@/components/shared/CTASection"
 import Link from "next/link"
+import { generatePageMetadata, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/seo"
 
-export const metadata = {
-  title: "Our Services | Artfelt Therapy",
+export const metadata = generatePageMetadata({
+  title: "Therapy Services by Divya Masiwal Batra | Art Therapy & Psychotherapy",
   description:
-    "Art psychotherapy, counseling, creative life coaching, and workshops. Find the right support for your journey.",
-}
+    "Art psychotherapy, counseling, creative life coaching, and workshops in Mumbai & online. Individual and group sessions by MA Clinical Psychologist Divya Masiwal Batra.",
+  path: "/services",
+  keywords: [
+    "art therapy services",
+    "psychotherapy Mumbai",
+    "online therapy India",
+    "creative counseling",
+    "art psychotherapy sessions",
+    "mental health workshops",
+  ],
+})
 
 export default function ServicesPage() {
   const services = getAllServices()
 
+  // Breadcrumb structured data
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Services", url: "/services" },
+  ])
+
+  // FAQ structured data
+  const faqSchema = generateFAQSchema([
+    {
+      question: "How do I know which service is right for me?",
+      answer: "If you're unsure, we recommend starting with a free 15-minute consultation call. We'll discuss your needs and help you find the best fit. You can also reach out via our contact form.",
+    },
+    {
+      question: "Do I need art experience?",
+      answer: "Not at all! Art psychotherapy is about the process of creating, not the final product. No artistic skill is required.",
+    },
+    {
+      question: "Are sessions available online?",
+      answer: "Yes, all our services are available both online (via video call) and in-person in Mumbai. Choose what works best for you.",
+    },
+    {
+      question: "What's your cancellation policy?",
+      answer: "We require 24 hours notice for cancellations or rescheduling. This allows us to offer the slot to someone else who may need it.",
+    },
+  ])
+
   return (
     <>
+      {/* Breadcrumb Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {/* FAQ Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Header Section */}
       <section className="bg-cream py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

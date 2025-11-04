@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter, Crimson_Text } from "next/font/google"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
+import { DEFAULT_METADATA, organizationSchema, personSchema } from "@/lib/seo"
 import "./globals.css"
 
 const inter = Inter({
@@ -17,11 +18,7 @@ const crimson = Crimson_Text({
   display: "swap",
 })
 
-export const metadata: Metadata = {
-  title: "Art Psychotherapy & Creative Counseling | Artfelt Therapy",
-  description:
-    "Professional art psychotherapy, counseling, and creative life coaching in Mumbai & online. Heal through creativity with certified therapists.",
-}
+export const metadata: Metadata = DEFAULT_METADATA
 
 export default function RootLayout({
   children,
@@ -30,6 +27,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Organization Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        {/* Person Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
       <body className={`${inter.variable} ${crimson.variable} antialiased`}>
         <Header />
         <main className="min-h-screen">{children}</main>

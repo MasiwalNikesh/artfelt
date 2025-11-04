@@ -2,12 +2,22 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CTASection } from "@/components/shared/CTASection"
 import Link from "next/link"
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 
-export const metadata = {
-  title: "Workshops & Programs | Artfelt Therapy",
+export const metadata = generatePageMetadata({
+  title: "Art Therapy Workshops by Divya Masiwal Batra | Group Programs Mumbai",
   description:
-    "Join our art therapy workshops and group programs. Community healing through creative expression.",
-}
+    "Join art therapy workshops and group programs led by Divya Masiwal Batra. Self-compassion, mandala therapy, and creative wellbeing programs in Mumbai & online.",
+  path: "/workshops",
+  keywords: [
+    "art therapy workshops",
+    "group therapy Mumbai",
+    "mandala therapy workshop",
+    "creative wellbeing programs",
+    "corporate wellness workshops",
+    "team building art therapy",
+  ],
+})
 
 // Sample workshop data - replace with your CMS later
 const workshops = [
@@ -68,8 +78,20 @@ const workshops = [
 ]
 
 export default function WorkshopsPage() {
+  // Breadcrumb structured data
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Workshops", url: "/workshops" },
+  ])
+
   return (
     <>
+      {/* Breadcrumb Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-lavender/20 to-white py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">

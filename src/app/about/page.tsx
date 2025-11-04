@@ -1,16 +1,38 @@
 import { Button } from "@/components/ui/button"
 import { CTASection } from "@/components/shared/CTASection"
 import Link from "next/link"
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 
-export const metadata = {
+export const metadata = generatePageMetadata({
   title: "Meet Divya Masiwal Batra | Art Therapist & Psychotherapist",
   description:
     "Discover Divya's journey from Business Economics to Art Therapy, combining 9 years of teaching experience with clinical expertise to bridge gaps in Indian mental health.",
-}
+  path: "/about",
+  keywords: [
+    "Divya Masiwal Batra",
+    "art therapist Mumbai",
+    "psychotherapist Mumbai",
+    "clinical psychology India",
+    "mental health professional",
+    "art therapy credentials",
+  ],
+})
 
 export default function AboutPage() {
+  // Breadcrumb structured data
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "About", url: "/about" },
+  ])
+
   return (
     <>
+      {/* Breadcrumb Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-cream to-white py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
