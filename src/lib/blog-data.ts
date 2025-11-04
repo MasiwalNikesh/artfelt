@@ -74,7 +74,7 @@ If you're curious about art therapy, remember that the goal isn't artistic skill
 
 In future articles, I'll share simple art therapy exercises you can try at home and dive deeper into specific techniques and their benefits.
 
-*— Divya Masiwal Batra, Art Therapist & Mental Wellness Coach*
+*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
     author: "Divya Masiwal Batra",
     category: "Art Therapy Insights",
@@ -163,7 +163,7 @@ Try incorporating one of these exercises into your daily routine, especially dur
 
 If anxiety is significantly impacting your daily life, consider reaching out for professional support. Art therapy can be a powerful complement to other mental health treatments.
 
-*— Divya Masiwal Batra, Art Therapist & Mental Wellness Coach*
+*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
     author: "Divya Masiwal Batra",
     category: "Mental Wellness",
@@ -259,7 +259,7 @@ If your inner critic is severe or persistent, or if it's linked to deeper trauma
 
 Remember: You deserve to speak to yourself with the same kindness you'd offer a loved one.
 
-*— Divya Masiwal Batra, Art Therapist & Mental Wellness Coach*
+*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
     author: "Divya Masiwal Batra",
     category: "Self-Discovery",
@@ -371,7 +371,7 @@ Art therapy doesn't make grief disappear, but it can help you:
 
 Grief is love with nowhere to go. Art gives that love a place to exist, to be witnessed, and to transform.
 
-*— Divya Masiwal Batra, Art Therapist & Mental Wellness Coach*
+*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
     author: "Divya Masiwal Batra",
     category: "Art Therapy Insights",
@@ -519,7 +519,7 @@ If creative journaling resonates with you, consider:
 
 Your journal becomes a trusted companion on your journey of self-discovery—a place where all parts of you are welcome.
 
-*— Divya Masiwal Batra, Art Therapist & Mental Wellness Coach*
+*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
     author: "Divya Masiwal Batra",
     category: "Creative Expression",
@@ -672,7 +672,7 @@ Trauma changes us, but it doesn't have to define us. Through art therapy, many s
 
 Your healing journey is uniquely yours. Art therapy honors that journey by meeting you exactly where you are.
 
-*— Divya Masiwal Batra, Art Therapist & Mental Wellness Coach*
+*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
 
 ---
 
