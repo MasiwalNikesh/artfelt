@@ -1,13 +1,22 @@
 import { NextRequest, NextResponse } from "next/server"
 import Razorpay from "razorpay"
 
-const razorpay = new Razorpay({
-  key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
-  key_secret: process.env.RAZORPAY_KEY_SECRET!,
-})
-
 export async function POST(request: NextRequest) {
   try {
+    // Initialize Razorpay with environment variable check
+    if (!process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET) {
+      console.error("Razorpay credentials not configured")
+      return NextResponse.json(
+        { error: "Payment service not configured" },
+        { status: 500 }
+      )
+    }
+
+    const razorpay = new Razorpay({
+      key_id: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+      key_secret: process.env.RAZORPAY_KEY_SECRET,
+    })
+
     const { amount, currency = "INR", bookingData } = await request.json()
 
     if (!amount || amount <= 0) {
