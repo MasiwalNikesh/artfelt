@@ -17,7 +17,7 @@ export const SITE_CONFIG = {
   socialMedia: {
     instagram: "https://www.instagram.com/artfelt.therapy/",
     linkedin: "https://www.linkedin.com/in/divyabatramasiwal/",
-    googleReviews: "https://g.page/r/YOUR_GOOGLE_PLACE_ID/review", // TODO: Add your Google Business Profile review link
+    googleReviews: "https://share.google/3q2pkw9sdtzgHghL6",
     facebook: "https://facebook.com/artfelt", // Optional: Update or remove if not active
   },
 }
