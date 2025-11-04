@@ -63,7 +63,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-4 text-sm font-semibold text-charcoal">Get in Touch</h3>
+            <h3 className="mb-4 text-sm font-semibold text-charcoal">Connect with Divya</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
@@ -73,25 +73,38 @@ export function Footer() {
                   {SITE_CONFIG.email}
                 </a>
               </li>
-              <li className="pt-2">
-                <div className="flex gap-4">
+              <li className="pt-3">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-charcoal/50">Follow & Review</p>
+                <div className="flex flex-col gap-2">
                   <a
                     href={SITE_CONFIG.socialMedia.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-charcoal/70 hover:text-sage-600"
-                    aria-label="Instagram"
+                    className="text-charcoal/70 hover:text-sage-600 flex items-center gap-2"
+                    aria-label="Follow on Instagram"
                   >
-                    Instagram
+                    <span>📷</span>
+                    <span>Instagram</span>
                   </a>
                   <a
-                    href={SITE_CONFIG.socialMedia.facebook}
+                    href={SITE_CONFIG.socialMedia.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-charcoal/70 hover:text-sage-600"
-                    aria-label="Facebook"
+                    className="text-charcoal/70 hover:text-sage-600 flex items-center gap-2"
+                    aria-label="Connect on LinkedIn"
                   >
-                    Facebook
+                    <span>💼</span>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href={SITE_CONFIG.socialMedia.googleReviews}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-charcoal/70 hover:text-sage-600 flex items-center gap-2"
+                    aria-label="Leave a Google Review"
+                  >
+                    <span>⭐</span>
+                    <span>Google Reviews</span>
                   </a>
                 </div>
               </li>

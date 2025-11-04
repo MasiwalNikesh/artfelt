@@ -15,9 +15,10 @@ export const SITE_CONFIG = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://artfelt.in",
   email: "bookings@artfelt.in",
   socialMedia: {
-    instagram: "https://instagram.com/artfelt",
-    facebook: "https://facebook.com/artfelt",
-    linkedin: "https://linkedin.com/company/artfelt",
+    instagram: "https://www.instagram.com/artfelt.therapy/",
+    linkedin: "https://www.linkedin.com/in/divyabatramasiwal/",
+    googleReviews: "https://g.page/r/YOUR_GOOGLE_PLACE_ID/review", // TODO: Add your Google Business Profile review link
+    facebook: "https://facebook.com/artfelt", // Optional: Update or remove if not active
   },
 }
 
