@@ -15,9 +15,18 @@ export function Footer() {
                 {SITE_CONFIG.name}
               </span>
             </Link>
+            <p className="mt-2 text-sm font-medium text-charcoal">
+              {SITE_CONFIG.tagline}
+            </p>
             <p className="mt-4 max-w-md text-sm text-charcoal/70">
               {SITE_CONFIG.description}
             </p>
+            <div className="mt-4 text-sm text-charcoal/60">
+              <p className="font-medium text-charcoal">About Divya</p>
+              <p className="mt-1">
+                Divya Masiwal Batra (MA Clinical Psychology) is an Art Therapist & Psychotherapist with 9+ years of experience in mental health education. She bridges business understanding, clinical expertise, and creative expression to make therapy accessible and culturally relevant for Indian clients.
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}
