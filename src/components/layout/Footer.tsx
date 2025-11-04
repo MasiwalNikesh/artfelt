@@ -1,0 +1,112 @@
+import Link from "next/link"
+import { SITE_CONFIG } from "@/lib/constants"
+
+export function Footer() {
+  const currentYear = new Date().getFullYear()
+
+  return (
+    <footer className="border-t border-soft-gray bg-cream">
+      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+          {/* Brand */}
+          <div className="md:col-span-2">
+            <Link href="/" className="inline-block">
+              <span className="font-serif text-2xl font-semibold text-sage-700">
+                {SITE_CONFIG.name}
+              </span>
+            </Link>
+            <p className="mt-4 max-w-md text-sm text-charcoal/70">
+              {SITE_CONFIG.description}
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold text-charcoal">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/services" className="text-charcoal/70 hover:text-sage-600">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-charcoal/70 hover:text-sage-600">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources" className="text-charcoal/70 hover:text-sage-600">
+                  Resources
+                </Link>
+              </li>
+              <li>
+                <Link href="/workshops" className="text-charcoal/70 hover:text-sage-600">
+                  Workshops
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-charcoal/70 hover:text-sage-600">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold text-charcoal">Get in Touch</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href={`mailto:${SITE_CONFIG.email}`}
+                  className="text-charcoal/70 hover:text-sage-600"
+                >
+                  {SITE_CONFIG.email}
+                </a>
+              </li>
+              <li className="pt-2">
+                <div className="flex gap-4">
+                  <a
+                    href={SITE_CONFIG.socialMedia.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-charcoal/70 hover:text-sage-600"
+                    aria-label="Instagram"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    href={SITE_CONFIG.socialMedia.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-charcoal/70 hover:text-sage-600"
+                    aria-label="Facebook"
+                  >
+                    Facebook
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="mt-12 border-t border-soft-gray pt-8">
+          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+            <p className="text-sm text-charcoal/60">
+              © {currentYear} {SITE_CONFIG.name}. All rights reserved.
+            </p>
+            <div className="flex gap-6 text-sm">
+              <Link href="/privacy" className="text-charcoal/60 hover:text-sage-600">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-charcoal/60 hover:text-sage-600">
+                Terms of Service
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
