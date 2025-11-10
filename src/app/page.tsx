@@ -4,8 +4,24 @@ import { FromDivya } from "@/components/home/FromDivya"
 import { AboutPreview } from "@/components/home/AboutPreview"
 import { CTASection } from "@/components/shared/CTASection"
 import { BASE_URL } from "@/lib/seo"
+import { prisma } from "@/lib/prisma"
 
-export default function Home() {
+// Fetch services from database
+async function getServices() {
+  const services = await prisma.service.findMany({
+    where: { isActive: true },
+    orderBy: { order: 'asc' },
+  })
+
+  // Parse JSON fields
+  return services.map((service) => ({
+    ...service,
+    bestFor: JSON.parse(service.bestFor),
+  }))
+}
+
+export default async function Home() {
+  const services = await getServices()
   // WebSite structured data
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -36,7 +52,7 @@ export default function Home() {
       />
 
       <Hero />
-      <ServicesGrid />
+      <ServicesGrid services={services} />
       <FromDivya />
       <AboutPreview />
       <CTASection />

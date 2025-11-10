@@ -6,15 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
     "@hookform/resolvers": "^5.2.2",
+    "@prisma/client": "^6.19.0",
     "@radix-ui/react-slot": "^1.2.3",
     "@react-email/components": "^0.5.7",
     "@sanity/client": "^7.12.0",
     "@sanity/image-url": "^1.2.0",
+    "bcryptjs": "^3.0.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -22,6 +29,7 @@
     "lucide-react": "^0.552.0",
     "next": "16.0.1",
     "next-sanity": "^11.6.3",
+    "prisma": "^6.19.0",
     "razorpay": "^2.9.6",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -37,6 +45,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.19",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
@@ -46,6 +55,7 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwindcss": "^4",
+    "tsx": "^4.20.6",
     "typescript": "^5"
   }
 }

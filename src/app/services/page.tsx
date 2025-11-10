@@ -1,4 +1,4 @@
-import { getAllServices } from "@/lib/data/services"
+import { prisma } from "@/lib/prisma"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { CTASection } from "@/components/shared/CTASection"
@@ -20,8 +20,22 @@ export const metadata = generatePageMetadata({
   ],
 })
 
-export default function ServicesPage() {
-  const services = getAllServices()
+// Fetch services from database
+async function getServices() {
+  const services = await prisma.service.findMany({
+    where: { isActive: true },
+    orderBy: { order: 'asc' },
+  })
+
+  // Parse JSON fields
+  return services.map((service) => ({
+    ...service,
+    bestFor: JSON.parse(service.bestFor),
+  }))
+}
+
+export default async function ServicesPage() {
+  const services = await getServices()
 
   // Breadcrumb structured data
   const breadcrumbSchema = generateBreadcrumbSchema([

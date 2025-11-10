@@ -43,3 +43,11 @@ next-env.d.ts
 
 # documentation files
 *.md
+
+/src/generated/prisma
+
+# database
+prisma/dev.db
+prisma/dev.db-journal
+*.db
+*.db-journal

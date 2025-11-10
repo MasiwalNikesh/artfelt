@@ -1,10 +1,24 @@
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { getAllServices } from "@/lib/data/services"
 
-export function ServicesGrid() {
-  const services = getAllServices()
+interface Service {
+  id: string
+  title: string
+  slug: string
+  icon: string
+  tagline: string
+  description: string
+  sessionLength: string
+  format: string
+  pricing: number
+}
+
+interface ServicesGridProps {
+  services: Service[]
+}
+
+export function ServicesGrid({ services }: ServicesGridProps) {
 
   return (
     <section className="py-16 md:py-24">
