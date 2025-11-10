@@ -1,7 +1,10 @@
 import { Hero } from "@/components/home/Hero"
+import { Stats } from "@/components/home/Stats"
 import { ServicesGrid } from "@/components/home/ServicesGrid"
 import { FromDivya } from "@/components/home/FromDivya"
 import { AboutPreview } from "@/components/home/AboutPreview"
+import { Testimonials } from "@/components/home/Testimonials"
+import { FAQ } from "@/components/home/FAQ"
 import { CTASection } from "@/components/shared/CTASection"
 import { BASE_URL } from "@/lib/seo"
 
@@ -36,9 +39,12 @@ export default function Home() {
       />
 
       <Hero />
+      <Stats />
       <ServicesGrid />
       <FromDivya />
       <AboutPreview />
+      <Testimonials />
+      <FAQ />
       <CTASection />
     </>
   )

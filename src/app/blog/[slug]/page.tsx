@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { getPostBySlug, getAllPosts, getRecentPosts } from "@/lib/blog-data"
+import { getPostBySlug, getAllPosts } from "@/lib/blog-data"
+import { RelatedPosts } from "@/components/blog/RelatedPosts"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
@@ -43,7 +43,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound()
   }
 
-  const relatedPosts = getRecentPosts(3).filter((p) => p.id !== post.id).slice(0, 2)
+  const allPosts = getAllPosts()
 
   // Article structured data
   const articleSchema = generateArticleSchema({
@@ -172,41 +172,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </article>
 
       {/* Related Posts */}
-      {relatedPosts.length > 0 && (
-        <section className="bg-cream py-16 md:py-20">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="mb-10 text-center font-serif text-3xl font-bold text-charcoal">
-              Continue Reading
-            </h2>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-              {relatedPosts.map((relatedPost) => (
-                <Link key={relatedPost.id} href={`/blog/${relatedPost.slug}`}>
-                  <Card className="h-full transition-all hover:border-sage-400 hover:shadow-lg">
-                    <CardHeader>
-                      <div className="mb-3 flex items-center justify-between text-xs text-charcoal/60">
-                        <span className="rounded-full bg-sage-100 px-2 py-1 font-medium text-sage-700">
-                          {relatedPost.category}
-                        </span>
-                        <span>{relatedPost.readTime}</span>
-                      </div>
-                      <CardTitle className="text-xl">{relatedPost.title}</CardTitle>
-                      <CardDescription>{relatedPost.excerpt}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <span className="text-sm font-medium text-sage-600">Read More →</span>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-            <div className="mt-10 text-center">
-              <Button asChild size="lg" variant="outline">
-                <Link href="/blog">View All Articles</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-      )}
+      <RelatedPosts currentPost={post} allPosts={allPosts} limit={3} />
 
       {/* CTA */}
       <section className="py-16 md:py-20">
