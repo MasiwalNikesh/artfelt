@@ -11,16 +11,16 @@ export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://artfelt.in"
 export const DEFAULT_METADATA = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Artfelt Therapy | Art Therapy & Psychotherapy by Divya Masiwal Batra",
+    default: "Artfelt Therapy | Art Therapy & Psychotherapy by Divya Batra Masiwal",
     template: "%s | Artfelt Therapy",
   },
   description:
-    "Art therapy and psychotherapy services by Divya Masiwal Batra (MA Clinical Psychology). 9+ years experience, combining clinical expertise with creative healing. Mumbai & Online sessions available.",
+    "Art therapy and psychotherapy services by Divya Batra Masiwal (MA Clinical Psychology). 9+ years experience, combining clinical expertise with creative healing. Mumbai & Online sessions available.",
   keywords: [
     "art therapy Mumbai",
     "psychotherapy Mumbai",
     "art psychotherapy India",
-    "Divya Masiwal Batra",
+    "Divya Batra Masiwal",
     "mental health India",
     "creative therapy",
     "online therapy India",
@@ -33,8 +33,8 @@ export const DEFAULT_METADATA = {
     "Indian mental health",
     "culturally sensitive therapy",
   ],
-  authors: [{ name: "Divya Masiwal Batra", url: `${BASE_URL}/about` }],
-  creator: "Divya Masiwal Batra",
+  authors: [{ name: "Divya Batra Masiwal", url: `${BASE_URL}/about` }],
+  creator: "Divya Batra Masiwal",
   publisher: "Artfelt Therapy",
   formatDetection: {
     email: false,
@@ -46,15 +46,15 @@ export const DEFAULT_METADATA = {
     locale: "en_IN",
     url: BASE_URL,
     siteName: "Artfelt Therapy",
-    title: "Artfelt Therapy | Art Therapy & Psychotherapy by Divya Masiwal Batra",
+    title: "Artfelt Therapy | Art Therapy & Psychotherapy by Divya Batra Masiwal",
     description:
-      "Professional art therapy and psychotherapy services in Mumbai and online. Founded by Divya Masiwal Batra, MA Clinical Psychology, with 9+ years teaching experience.",
+      "Professional art therapy and psychotherapy services in Mumbai and online. Founded by Divya Batra Masiwal, MA Clinical Psychology, with 9+ years teaching experience.",
     images: [
       {
         url: `${BASE_URL}/images/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Artfelt Therapy - Art Therapy & Psychotherapy by Divya Masiwal Batra",
+        alt: "Artfelt Therapy - Art Therapy & Psychotherapy by Divya Batra Masiwal",
       },
     ],
   },
@@ -62,7 +62,7 @@ export const DEFAULT_METADATA = {
     card: "summary_large_image",
     title: "Artfelt Therapy | Art Therapy & Psychotherapy",
     description:
-      "Art therapy and psychotherapy services by Divya Masiwal Batra in Mumbai and online.",
+      "Art therapy and psychotherapy services by Divya Batra Masiwal in Mumbai and online.",
     images: [`${BASE_URL}/images/twitter-image.jpg`],
     creator: "@artfelttherapy",
   },
@@ -163,7 +163,7 @@ export const organizationSchema = {
   founder: {
     "@type": "Person",
     "@id": `${BASE_URL}/#founder`,
-    name: "Divya Masiwal Batra",
+    name: "Divya Batra Masiwal",
     jobTitle: "Art Therapist & Psychotherapist",
     image: `${BASE_URL}/images/divya-headshot.jpg`,
     url: `${BASE_URL}/about`,
@@ -235,7 +235,7 @@ export const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   "@id": `${BASE_URL}/#founder`,
-  name: "Divya Masiwal Batra",
+  name: "Divya Batra Masiwal",
   givenName: "Divya",
   familyName: "Masiwal Batra",
   jobTitle: "Art Therapist & Psychotherapist",

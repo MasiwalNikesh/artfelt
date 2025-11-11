@@ -5,9 +5,9 @@ import Link from "next/link"
 import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata = generatePageMetadata({
-  title: "Art Therapy Workshops by Divya Masiwal Batra | Group Programs Mumbai",
+  title: "Art Therapy Workshops by Divya Batra Masiwal | Group Programs Mumbai",
   description:
-    "Join art therapy workshops and group programs led by Divya Masiwal Batra. Self-compassion, mandala therapy, and creative wellbeing programs in Mumbai & online.",
+    "Join art therapy workshops and group programs led by Divya Batra Masiwal. Self-compassion, mandala therapy, and creative wellbeing programs in Mumbai & online.",
   path: "/workshops",
   keywords: [
     "art therapy workshops",

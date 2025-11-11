@@ -13,7 +13,7 @@ export function FromDivya() {
               {/* TODO: Replace with actual image
                   <Image
                     src="/images/divya-studio.jpg"
-                    alt="Divya Masiwal Batra, Art Therapist & Psychotherapist"
+                    alt="Divya Batra Masiwal, Art Therapist & Psychotherapist"
                     fill
                     className="object-cover"
                   />
@@ -30,7 +30,7 @@ export function FromDivya() {
             </h2>
             <div className="mb-6 space-y-4 text-lg leading-relaxed text-charcoal/80">
               <p>
-                Hi, I'm <strong>Divya Masiwal Batra</strong>—an Art Therapist & Psychotherapist with a somewhat unexpected path to this work.
+                Hi, I'm <strong>Divya Batra Masiwal</strong>—an Art Therapist & Psychotherapist with a somewhat unexpected path to this work.
               </p>
               <p>
                 I started with a degree in <strong>Business Economics</strong>, pursued a <strong>Master's in Clinical Psychology</strong>, and spent <strong>9 years teaching mental health and life skills</strong> at nonprofit organizations. Along the way, I discovered that traditional talk therapy doesn't work for everyone—and that art can be a powerful bridge to healing, especially in the Indian context where emotional expression is often difficult to verbalize.

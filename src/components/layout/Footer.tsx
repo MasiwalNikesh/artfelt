@@ -31,13 +31,13 @@ export function Footer() {
               <div className="flex gap-4 items-start">
                 <Image
                   src="/images/divya-batra.jpeg"
-                  alt="Divya Masiwal Batra"
+                  alt="Divya Batra Masiwal"
                   width={80}
                   height={80}
                   className="rounded-lg object-cover flex-shrink-0 h-20 w-20"
                 />
                 <p className="mt-0">
-                  Divya Masiwal Batra (MA Clinical Psychology) is an Art Therapist & Psychotherapist with 9+ years of experience in mental health education. She bridges business understanding, clinical expertise, and creative expression to make therapy accessible and culturally relevant for Indian clients.
+                  Divya Batra Masiwal (MA Clinical Psychology) is an Art Therapist & Psychotherapist with 9+ years of experience in mental health education. She bridges business understanding, clinical expertise, and creative expression to make therapy accessible and culturally relevant for Indian clients.
                 </p>
               </div>
             </div>

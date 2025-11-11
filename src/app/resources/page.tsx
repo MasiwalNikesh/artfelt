@@ -6,9 +6,9 @@ import Link from "next/link"
 import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata = generatePageMetadata({
-  title: "Art Therapy Resources by Divya Masiwal Batra | Free & Paid Tools",
+  title: "Art Therapy Resources by Divya Batra Masiwal | Free & Paid Tools",
   description:
-    "Therapeutic art resources curated by Divya Masiwal Batra: mandala coloring books, creative emotion workbooks, healing journals, and free downloadable guides for mental wellness.",
+    "Therapeutic art resources curated by Divya Batra Masiwal: mandala coloring books, creative emotion workbooks, healing journals, and free downloadable guides for mental wellness.",
   path: "/resources",
   keywords: [
     "art therapy resources",
@@ -20,7 +20,7 @@ export const metadata = generatePageMetadata({
   ],
 })
 
-// Art Therapy products curated by Divya Masiwal Batra
+// Art Therapy products curated by Divya Batra Masiwal
 const products = [
   {
     id: "1",
@@ -98,7 +98,7 @@ export default function ResourcesPage() {
             Art Therapy Resources & Tools
           </h1>
           <p className="mt-6 text-lg leading-8 text-charcoal/70">
-            Curated by Divya Masiwal Batra: Explore therapeutic tools, creative workbooks, and
+            Curated by Divya Batra Masiwal: Explore therapeutic tools, creative workbooks, and
             educational content to support your mental wellness journey.
           </p>
         </div>
