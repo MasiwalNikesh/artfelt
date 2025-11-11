@@ -4,12 +4,12 @@ import Link from "next/link"
 import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata = generatePageMetadata({
-  title: "Meet Divya Masiwal Batra | Art Therapist & Psychotherapist",
+  title: "Meet Divya Batra Masiwal | Art Therapist & Psychotherapist",
   description:
     "Discover Divya's journey from Business Economics to Art Therapy, combining 9 years of teaching experience with clinical expertise to bridge gaps in Indian mental health.",
   path: "/about",
   keywords: [
-    "Divya Masiwal Batra",
+    "Divya Batra Masiwal",
     "art therapist Mumbai",
     "psychotherapist Mumbai",
     "clinical psychology India",
@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center">
             <h1 className="font-serif text-4xl font-bold tracking-tight text-charcoal sm:text-5xl">
-              Meet Divya Masiwal Batra
+              Meet Divya Batra Masiwal
             </h1>
             <p className="mt-4 text-xl font-medium text-sage-700">
               Art Therapist & Psychotherapist, MA Clinical Psychology
@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="mb-16">
             <div className="mb-12 flex justify-center">
               <div className="flex h-64 w-64 items-center justify-center rounded-full bg-gradient-to-br from-sage-100 to-soft-blue/20 overflow-hidden">
-                {/* TODO: Replace with actual image - <Image src="/images/divya-headshot.jpg" alt="Divya Masiwal Batra" width={256} height={256} className="object-cover" /> */}
+                {/* TODO: Replace with actual image - <Image src="/images/divya-headshot.jpg" alt="Divya Batra Masiwal" width={256} height={256} className="object-cover" /> */}
                 <span className="text-8xl">🎨</span>
               </div>
             </div>

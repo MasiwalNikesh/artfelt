@@ -5,9 +5,9 @@ import Link from "next/link"
 import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata = generatePageMetadata({
-  title: "Art Therapy Blog by Divya Masiwal Batra | Mental Wellness Insights",
+  title: "Art Therapy Blog by Divya Batra Masiwal | Mental Wellness Insights",
   description:
-    "Explore expert articles on art therapy, mental wellness, and creative healing by Divya Masiwal Batra, MA Clinical Psychology. Practical techniques for emotional wellbeing in India.",
+    "Explore expert articles on art therapy, mental wellness, and creative healing by Divya Batra Masiwal, MA Clinical Psychology. Practical techniques for emotional wellbeing in India.",
   path: "/blog",
   keywords: [
     "art therapy blog",
@@ -46,7 +46,7 @@ export default function BlogPage() {
             Practical wisdom, creative techniques, and reflections on healing through art therapy
           </p>
           <p className="mt-4 text-base text-charcoal/60">
-            By Divya Masiwal Batra, Art Therapist & Mental Wellness Coach
+            By Divya Batra Masiwal, Art Therapist & Mental Wellness Coach
           </p>
         </div>
       </section>

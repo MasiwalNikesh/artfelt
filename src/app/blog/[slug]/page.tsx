@@ -153,7 +153,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               DM
             </div>
             <div>
-              <h3 className="mb-2 text-xl font-bold text-charcoal">About Divya Masiwal Batra</h3>
+              <h3 className="mb-2 text-xl font-bold text-charcoal">About Divya Batra Masiwal</h3>
               <p className="mb-2 text-sm font-medium text-sage-700">MA Clinical Psychology | Art Therapist & Psychotherapist</p>
               <p className="mb-4 text-charcoal/70">
                 Divya combines her background in Business Economics, Master's in Clinical Psychology, and 9 years of teaching experience at nonprofits to offer a unique approach to art therapy and psychotherapy. She's dedicated to bridging gaps in Indian mental health by making therapy accessible, culturally sensitive, and creative—honoring both evidence-based methods and the healing power of artistic expression.

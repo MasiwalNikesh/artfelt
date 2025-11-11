@@ -2,9 +2,9 @@ import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = generatePageMetadata({
-  title: "Contact Divya Masiwal Batra | Art Therapy Consultation Mumbai",
+  title: "Contact Divya Batra Masiwal | Art Therapy Consultation Mumbai",
   description:
-    "Get in touch with Divya Masiwal Batra for art therapy and psychotherapy services. Free 15-minute consultation available. Mumbai & online sessions.",
+    "Get in touch with Divya Batra Masiwal for art therapy and psychotherapy services. Free 15-minute consultation available. Mumbai & online sessions.",
   path: "/contact",
   keywords: [
     "contact art therapist",

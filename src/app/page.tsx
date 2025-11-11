@@ -13,7 +13,7 @@ export default function Home() {
     "@id": `${BASE_URL}/#website`,
     url: BASE_URL,
     name: "Artfelt Therapy",
-    description: "Art therapy and psychotherapy services by Divya Masiwal Batra in Mumbai and online",
+    description: "Art therapy and psychotherapy services by Divya Batra Masiwal in Mumbai and online",
     publisher: {
       "@id": `${BASE_URL}/#organization`,
     },

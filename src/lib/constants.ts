@@ -4,10 +4,10 @@
 
 export const SITE_CONFIG = {
   name: "Artfelt Therapy",
-  tagline: "Founded by Divya Masiwal Batra, Art Therapist & Psychotherapist",
-  description: "Founded by Divya Masiwal Batra (MA Clinical Psychology), offering art therapy and psychotherapy in Mumbai & online. Combining 9 years of teaching experience with clinical expertise to bridge gaps in Indian mental health through creative healing.",
+  tagline: "Founded by Divya Batra Masiwal, Art Therapist & Psychotherapist",
+  description: "Founded by Divya Batra Masiwal (MA Clinical Psychology), offering art therapy and psychotherapy in Mumbai & online. Combining 9 years of teaching experience with clinical expertise to bridge gaps in Indian mental health through creative healing.",
   founder: {
-    name: "Divya Masiwal Batra",
+    name: "Divya Batra Masiwal",
     title: "Art Therapist & Psychotherapist",
     credentials: "MA Clinical Psychology",
     email: "divya@artfelt.in",

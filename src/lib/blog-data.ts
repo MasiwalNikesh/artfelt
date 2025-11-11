@@ -74,9 +74,9 @@ If you're curious about art therapy, remember that the goal isn't artistic skill
 
 In future articles, I'll share simple art therapy exercises you can try at home and dive deeper into specific techniques and their benefits.
 
-*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
+*— Divya Batra Masiwal, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
-    author: "Divya Masiwal Batra",
+    author: "Divya Batra Masiwal",
     category: "Art Therapy Insights",
     tags: ["art therapy", "beginners", "mental health", "creative healing"],
     readTime: "6 min read",
@@ -163,9 +163,9 @@ Try incorporating one of these exercises into your daily routine, especially dur
 
 If anxiety is significantly impacting your daily life, consider reaching out for professional support. Art therapy can be a powerful complement to other mental health treatments.
 
-*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
+*— Divya Batra Masiwal, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
-    author: "Divya Masiwal Batra",
+    author: "Divya Batra Masiwal",
     category: "Mental Wellness",
     tags: ["anxiety", "art exercises", "self-help", "mindfulness"],
     readTime: "7 min read",
@@ -259,9 +259,9 @@ If your inner critic is severe or persistent, or if it's linked to deeper trauma
 
 Remember: You deserve to speak to yourself with the same kindness you'd offer a loved one.
 
-*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
+*— Divya Batra Masiwal, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
-    author: "Divya Masiwal Batra",
+    author: "Divya Batra Masiwal",
     category: "Self-Discovery",
     tags: ["inner critic", "self-compassion", "mental health", "personal growth"],
     readTime: "8 min read",
@@ -371,9 +371,9 @@ Art therapy doesn't make grief disappear, but it can help you:
 
 Grief is love with nowhere to go. Art gives that love a place to exist, to be witnessed, and to transform.
 
-*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
+*— Divya Batra Masiwal, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
-    author: "Divya Masiwal Batra",
+    author: "Divya Batra Masiwal",
     category: "Art Therapy Insights",
     tags: ["grief", "loss", "healing", "art therapy", "emotional processing"],
     readTime: "9 min read",
@@ -519,9 +519,9 @@ If creative journaling resonates with you, consider:
 
 Your journal becomes a trusted companion on your journey of self-discovery—a place where all parts of you are welcome.
 
-*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
+*— Divya Batra Masiwal, MA Clinical Psychology, Art Therapist & Psychotherapist*
     `,
-    author: "Divya Masiwal Batra",
+    author: "Divya Batra Masiwal",
     category: "Creative Expression",
     tags: ["journaling", "self-discovery", "creativity", "mindfulness", "personal growth"],
     readTime: "8 min read",
@@ -672,13 +672,13 @@ Trauma changes us, but it doesn't have to define us. Through art therapy, many s
 
 Your healing journey is uniquely yours. Art therapy honors that journey by meeting you exactly where you are.
 
-*— Divya Masiwal Batra, MA Clinical Psychology, Art Therapist & Psychotherapist*
+*— Divya Batra Masiwal, MA Clinical Psychology, Art Therapist & Psychotherapist*
 
 ---
 
 *If you're struggling with trauma, please reach out to a qualified mental health professional. You don't have to heal alone.*
     `,
-    author: "Divya Masiwal Batra",
+    author: "Divya Batra Masiwal",
     category: "Art Therapy Insights",
     tags: ["trauma", "healing", "PTSD", "art therapy", "nervous system"],
     readTime: "10 min read",
