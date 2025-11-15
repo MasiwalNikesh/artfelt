@@ -1,8 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Artfelt Therapy
+
+A modern therapy booking and consultation platform built with Next.js, featuring Razorpay payments and Resend email notifications.
+
+## Features
+
+- 🎨 Art therapy booking system
+- 💳 Integrated Razorpay payment processing
+- 📧 Automated email confirmations via Resend
+- 📱 Responsive design with Tailwind CSS
+- 🔒 Secure payment verification
+- ✨ Beautiful React Email templates
 
 ## Getting Started
 
-First, run the development server:
+First, set up your environment variables by creating a `.env` file:
+
+```bash
+cp .env.example .env
+```
+
+Then add your API keys to `.env`:
+- Razorpay keys from [dashboard.razorpay.com](https://dashboard.razorpay.com/app/website-app-settings/api-keys)
+- Resend API key from [resend.com/api-keys](https://resend.com/api-keys)
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -29,8 +50,26 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Environment Variables
+
+Required environment variables for production:
+
+```env
+NEXT_PUBLIC_RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_secret
+RESEND_API_KEY=your_resend_api_key
+```
+
+## API Routes
+
+- `POST /api/payment/create-order` - Create Razorpay payment order
+- `POST /api/payment/verify` - Verify payment and confirm booking
+- `POST /api/email/send-confirmation` - Send booking confirmation emails
+
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is optimized for deployment on [Vercel Platform](https://vercel.com/new).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Important**: Make sure to add all environment variables in your Vercel project settings before deploying.
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
